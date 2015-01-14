@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: whattodo_production
-  username: whattodo
-  password: <%= ENV['WHATTODO_DATABASE_PASSWORD'] %>
+  database:
+  username:
+  password:
