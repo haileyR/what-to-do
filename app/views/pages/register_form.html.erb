@@ -1,0 +1,21 @@
+<h2>Register</h2>
+<%= form_for @user, url: users_path do |f| %>
+<p>
+  <%= f.label "Username" %><br>
+  <%= f.text_field :username, placeholder: 'Username' %>
+</p>
+<p>
+  <%= f.label "Password" %><br>
+  <%= f.text_field :password, placeholder: 'password', type: 'password'  %>
+</p>
+<p>
+  <%= f.label "Password Confirmation" %><br>
+  <%= f.text_field :password_confirmation, placeholder: 'password_confirmation', type: 'password'  %>
+</p>
+<p>
+  <%= f.submit 'Register' %>
+</p>
+
+
+<% end %>
+
